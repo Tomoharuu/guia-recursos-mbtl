@@ -37,7 +37,7 @@ O guia tem como objetivo fornecer os seguintes tipos de informação para cada p
 
 <br/>
 
-## 🙇 Agredicmentos especiais
+## 🙇 Agredecimentos especiais
 A toda a comunidade de Melty Blood: Type Lumina. Este website só é possível graças a dedicação de centenas de pessoas que colocaram tanto esforço em produzir conteúdo, tanto para falar do jogo que tanto gostam, quanto para fazer com que outros tenham essa mesma paixão que eles.
 
 Agradecimentos especiais também a comunidade brasileira de Melty Blood, Reverse Beat Brasil, por propocionar um ambiente acolhedor para mim e tantas outras pessoas que vieram aprender sobre Melty Blood e jogos de luta ao longo de muitos anos.
