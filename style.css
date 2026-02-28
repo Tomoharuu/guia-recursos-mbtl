@@ -1,0 +1,65 @@
+.box {
+  height: 150px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+}
+
+.card {
+    height: 92%;
+    margin-bottom: 10px;
+}
+
+.tag {
+    margin-right: 8px;
+}
+
+.button {
+    margin-bottom: 10px;
+}
+
+.card-content {
+    margin-bottom: 5px;
+}
+
+body {
+    background-image: url("https://meltyblood.typelumina.com/resources/img/top/bg2_cafb5f75f47564ba9a0b9e3fb4db5fd6.jpg");  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+#title {
+    height: 200px;
+}
+
+.img_title {
+    height: 150px;
+    max-width: 500px;
+}
+
+.chibi {
+    width: 80px;
+    padding-right: 20px;
+}
+
+.legenda {
+    font-size: 16px;
+    color: rgb(161, 156, 165);
+}
+
+.modal-card {
+    width: 75%;
+}
+
+.progress {
+    margin-top: 10px;
+}
