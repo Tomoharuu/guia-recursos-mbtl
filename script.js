@@ -41,19 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-let switchTabs = (tab) => {
-	// get all tab list items and remove the is-active class
-	let tabs = document.querySelectorAll(".tabs li");
-	tabs.forEach(t => {t.classList.remove("is-active");});
-	// set is-active on the passed tab element
-	tab.classList.add("is-active");
-	// get all content elements and remove is-active
-	let contents = document.querySelectorAll("#tab-content .content");
-	contents.forEach(t => {t.classList.remove("is-active");});
-	// get the data-index data attribute from the selected tab (passed here)
-	let activeTabIndex = tab.getAttribute("data-index");
-	// get the corresonding tab content via the data-content attribute
-	let activeContent = document.querySelector(`[data-content='${activeTabIndex}']`);
-	// set is-active on the corresponding tab content
-	activeContent.classList.add("is-active");
-}
+document.querySelectorAll('.tabs li').forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 1. Encontra o container pai deste grupo específico
+    const container = tab.closest('.tab-container');
+    
+    // 2. Remove 'is-active' apenas das abas DESTE container
+    container.querySelectorAll('.tabs li').forEach(item => {
+      item.classList.remove('is-active');
+    });
+    
+    // 3. Adiciona 'is-active' na aba clicada
+    tab.classList.add('is-active');
+
+    // 4. Esconde todos os conteúdos DESTE container
+    container.querySelectorAll('.tab-pane').forEach(pane => {
+      pane.classList.add('is-hidden');
+    });
+
+    // 5. Mostra o conteúdo correspondente pelo ID
+    const targetId = tab.dataset.tab;
+    container.querySelector(`#${targetId}`).classList.remove('is-hidden');
+  });
+});
