@@ -519,7 +519,7 @@
               <p class="card-header-title"><span class="tag is-info">Wiki</span>Mizuumi Wiki</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/akiha_mizuumi.png" alt="">
               </figure>
             </div>
@@ -532,7 +532,7 @@
               <p class="card-header-title"><span class="tag is-success">Sheet</span>Combo List by ???</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/akiha_sheet.png" alt="">
               </figure>
             </div>
@@ -544,7 +544,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span>Combo List by Key Millia</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hn2kX6LodWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -555,7 +555,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span><span class="tag is-warning">Outdated</span>Complete Guide by MakotoFOX</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HH1xypUj5kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -597,7 +597,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span>Setplay Guide by Taka</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0pN27HJNjMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -608,7 +608,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span><span class="tag is-warning">Outdated</span>Combo List by Taka</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a6ZiQp4oang" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -619,7 +619,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span>Aoko Analysis for 1.45 Patch by NubTactics</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ar895nZCk3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -631,7 +631,7 @@
               <p class="card-header-title"><span class="tag is-info">Doc</span><span class="tag is-warning">Outdated</span>Complete Guide by ???</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/aoko_doc.png" alt="">
               </figure>
             </div>
@@ -644,7 +644,7 @@
               <p class="card-header-title"><span class="tag is-info">Doc</span><span class="tag is-warning">Outdated</span>Combo Theory Guide by NubTactics</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/aoko_doc_nubtactics.png" alt="">
               </figure>
             </div>
@@ -679,12 +679,10 @@
       </header>
       <section class="modal-card-body">
 
-
-
-
+        
         <div class="tabs is-boxed">
           <ul>
-            <li class="">
+            <li class="is-active" onclick="switchTabs(this)" data-index="arcueid_ref">
               <a>
                 <span class="icon is-small"
                   ><i class="fa fa-graduation-cap" aria-hidden="true"></i
@@ -692,7 +690,7 @@
                 <span>References</span>
               </a>
             </li>
-            <li class="is-active">
+            <li onclick="switchTabs(this)" data-index="arcueid_players">
               <a>
                 <span class="icon is-small"
                   ><i class="fa fa-users" aria-hidden="true"></i
@@ -703,74 +701,96 @@
           </ul>
         </div>
 
-        <div class="fixed-grid has-5-cols-widescreen has-4-cols-desktop has-3-cols-tablet has-1-cols-mobile pb-5">
-        <div class="grid">
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/jp.webp"/> gonsan (ごんさん)</p>
-            </header>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  style="width: 40%; height: 90%; margin: auto;"
-                  src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
-                  alt="Placeholder image"
-                />
-              </figure><br>
+
+
+
+
+        <div id="tab-content">
+          <div class="content is-active" data-content="arcueid_ref">
+
+          <article class="message is-warning is-light px-5">
+            <div class="message-header">
+              <p><i class="fa fa-exclamation-triangle"></i> | Atenção!</p>
             </div>
-            <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
-              <div class="content">
-                <a href="#">melty.games</a> /
-                <a href="#">YouTube</a> 
-              </div>
+            <div class="message-body">
+              Esta página está em reconstrução e a seção deste personagem ainda não foi atualizada!<br> Para verificar a versão antiga da página com as informações deste personagem, <a style="color: lightblue;" href="old.html">clique aqui</a>.
             </div>
+          </article>
+
+
           </div>
 
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/fr.webp"/> MagicRider</p>
-            </header>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  style="width: 40%; height: 90%; margin: auto;"
-                  src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
-                  alt="Placeholder image"
-                />
-              </figure><br>
-            </div>
-            <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
-              <div class="content">
-                <a href="#">melty.games</a>
+          <div class="content" data-content="arcueid_players">
+            
+            <div class="fixed-grid has-5-cols-widescreen has-4-cols-desktop has-3-cols-tablet has-1-cols-mobile pb-5">
+            <div class="grid">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/jp.webp"/> gonsan (ごんさん)</p>
+                </header>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      style="width: 40%; height: 90%; margin: auto;"
+                      src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
+                      alt="Placeholder image"
+                    />
+                  </figure><br>
+                </div>
+                <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
+                    <a href="#">melty.games</a> /
+                    <a href="#">YouTube</a> 
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/br.webp"/> Rekom</p>
-            </header>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  style="width: 40%; height: 90%; margin: auto;"
-                  src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
-                  alt="Placeholder image"
-                />
-              </figure><br>
-            </div>
-            <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
-              <div class="content">
-                <a href="#">melty.games</a>
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/fr.webp"/> MagicRider</p>
+                </header>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      style="width: 40%; height: 90%; margin: auto;"
+                      src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
+                      alt="Placeholder image"
+                    />
+                  </figure><br>
+                </div>
+                <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
+                    <a href="#">melty.games</a>
+                </div>
               </div>
+
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title"><img style="width: 25px; margin-right: 5px; border-radius: 10%;" src="https://www.worldometers.info/images/flags/w120/br.webp"/> Rekom</p>
+                </header>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      style="width: 40%; height: 90%; margin: auto;"
+                      src="https://tomoharuu.github.io/guia-recursos-mbtl/TL%20Lobby%20Chibis/Arcueid/Arcueid%20Win_1.png"
+                      alt="Placeholder image"
+                    />
+                  </figure><br>
+                </div>
+                <div class="card-content" style="border-top-style: solid; border-color: rgba(192, 204, 204, 0.11);">
+                    <a href="#">melty.games</a>
+                </div>
+              </div>
+
+
+
+            
             </div>
+            </div>
+
           </div>
-
-
-
-        
         </div>
-        </div>
+
+
+
+
 
       </section>
       <footer class="modal-card-foot">
@@ -1473,7 +1493,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span>Combo List by すさの尾</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IICkHnHGcyI?si=NMOETx9lD17LbOwt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -1485,7 +1505,7 @@
               <p class="card-header-title"><span class="tag is-success">Sheet</span>Combo List by Medusa</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/vlov_sheet_medusa.png" alt="">
               </figure>
             </div>
@@ -1497,7 +1517,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span><span class="tag is-warning">1.43 Patch</span>Complete Guide by Ted</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9NoMs-R_90w?si=A5_oUkPQdQ_8GQMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
@@ -1509,7 +1529,7 @@
               <p class="card-header-title"><span class="tag is-info">Doc</span><span class="tag is-warning">Outdated</span>Complete Guide by howlaire</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
                 <img src="thumbnails/vlov_doc_howlaire.png" alt="">
               </figure>
             </div>
@@ -1521,7 +1541,7 @@
               <p class="card-header-title"><span class="tag is-danger">Video</span>Moon Drive Combo Playlist by JanetLome</p>
             </header>
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-16by9">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=9GUvLHZbqroLyf9t&amp;list=PL9k6HQW5pDfzHoWEypBHbXTBn8Sbj5iX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>

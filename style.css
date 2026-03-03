@@ -63,3 +63,11 @@ body {
 .progress {
     margin-top: 10px;
 }
+
+#tab-content .content {
+	display: none;
+}
+
+#tab-content .content.is-active {
+	display: block;
+}

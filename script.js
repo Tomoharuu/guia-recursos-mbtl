@@ -40,3 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+let switchTabs = (tab) => {
+	// get all tab list items and remove the is-active class
+	let tabs = document.querySelectorAll(".tabs li");
+	tabs.forEach(t => {t.classList.remove("is-active");});
+	// set is-active on the passed tab element
+	tab.classList.add("is-active");
+	// get all content elements and remove is-active
+	let contents = document.querySelectorAll("#tab-content .content");
+	contents.forEach(t => {t.classList.remove("is-active");});
+	// get the data-index data attribute from the selected tab (passed here)
+	let activeTabIndex = tab.getAttribute("data-index");
+	// get the corresonding tab content via the data-content attribute
+	let activeContent = document.querySelector(`[data-content='${activeTabIndex}']`);
+	// set is-active on the corresponding tab content
+	activeContent.classList.add("is-active");
+}
